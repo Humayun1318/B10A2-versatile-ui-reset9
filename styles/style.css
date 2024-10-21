@@ -258,6 +258,46 @@ nav {
   border-radius: 50%;
 }
 
+/* meet our team  */
+.team-container {
+  width: 74%;
+  margin: 0 auto 100px;
+  text-align: center;
+}
+
+.team-info>p {
+  margin: 14px auto 58px;
+}
+
+.team-cards {
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.10);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.team-card {
+  position: relative;
+}
+
+.team-card img {
+  border-radius: 18px;
+  width: 100%;
+  height: 100%;
+}
+
+.team-card h5 {
+  font-size: 1.25em;
+}
+
+.team-member-name {
+  position: absolute;
+  bottom: 16px;
+  left: 19px;
+}
+
 /* Styles for small mobile screens <= 576px */
 @media only screen and (max-width: 576px) {
   header {
@@ -320,17 +360,25 @@ nav {
     grid-template-columns: repeat(1, 1fr);
   }
 
+  /* meet our team  */
+  .team-container {
+    width: 90%;
+  }
+  .team-cards{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
 
 }
 
-/* Styles for devices between 391px and 750px (tablets) */
+/* Styles for devices between 577px and 992px (tablets) */
 @media only screen and (min-width: 577px) and (max-width: 992px) {
   header {
     width: 90%;
   }
 
   .nav-links {
-    /* gap: 15px; */
+    gap: 30px;
   }
 
   .nav-links li a {
@@ -373,5 +421,10 @@ nav {
 
   .habits-cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* meet our team  */
+  .team-container {
+    width: 90%;
   }
 }
