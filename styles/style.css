@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=Mimma&display=swap');
+
+/* CSS Reset - Remove all default padding, margin, and set box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+/* Body styling */
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  background: #000;
+  max-width: 1440px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+/* Ensure images don't overflow their container */
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* button */
+.custom-btn {
+  border: 0;
+  border-radius: 42px;
+  padding: 12px 30px;
+  cursor: pointer;
+  color: #FFF;
+  font-family: 'Inter';
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  background: #E6533C;
+}
+
+/*Common Paragraph Styles */
+.para {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.50);
+
+}
+
+/* common heading */
+.heading {
+  font-family: 'Inter', sans-serif;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 900;
+  color: #FFF;
+}
+
+/* ................Header style............. */
+header {
+  width: 74%;
+  margin: 57px auto 100px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo h1 {
+  color: #E6533C;
+  font-family: Inter;
+  font-size: 2.25em;
+  font-style: italic;
+  font-weight: 800;
+}
+
+/*nav menu toggle icon styles */
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  display: none;
+}
+
+.menu-icon .fa-times {
+  display: none;
+}
+
+#menu-toggle:checked+.menu-icon .fa-bars {
+  display: none;
+}
+
+#menu-toggle:checked+.menu-icon .fa-times {
+  display: block;
+}
+
+#menu-toggle:checked~.menu-icon~.nav-links {
+  display: block;
+  display: flex;
+  position: absolute;
+  top: 120px;
+  flex-direction: column;
+  gap: 24px;
+  background-color: rgba(26, 19, 3, 0.69);
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+/* nav menu list */
+.nav-links {
+  display: flex;
+  gap: 47px;
+}
+
+.nav-links li a {
+  font-family: Inter;
+  font-size: 1.125em;
+  font-style: normal;
+  font-weight: 400;
+  color: #FFF;
+}
+
+.nav-links li:first-child a {
+  font-weight: 600;
+  border-radius: 46px;
+  background: #E6533C;
+  padding: 8px 20px;
+}
+
+/* ..............header banner  ............*/
+.banner-container {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFF;
+}
+
+.banner-info {
+  width: 56%;
+}
+
+.banner-info>h1 {
+  color: #FFF;
+  font-family: 'Inter';
+  font-size: 78px;
+  font-style: normal;
+  font-weight: 900;
+}
+
+#shape {
+  color: #FFF;
+  font-family: 'Miama', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+
+}
+
+.banner-info>p {
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+.banner-info div button:last-child {
+  border: 1px solid #FFF;
+  background-color: #000;
+}
+
+.banner-img {
+  position: relative;
+}
+
+.Free-Workout-Videos {
+  position: absolute;
+  padding: 17px 28px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(10px);
+  right: -74px;
+  top: 125px
+}
+
+#video-number {
+  color: #FFF;
+  font-size: 2.5em;
+  font-weight: 900;
+}
+
+.Free-Workout-Videos>p {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.8125em;
+}
+
+.Video-tutorial {
+  display: flex;
+  gap: 8px;
+  height: 100px;
+  align-items: end;
+  position: absolute;
+  padding: 17px 28px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: rgba(48, 48, 48, 0.54);
+  backdrop-filter: blur(10px);
+  top: 415px;
+  left: -110px;
+}
+
+.Video-tutorial>p {
+  color: rgba(239, 237, 232, 0.65);
+
+}
+
+/* Styles for small mobile screens <= 390px */
+@media only screen and (max-width: 576px) {
+  header {
+    width: 90%;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    
+  }
+
+  /* header banner */
+  .banner-container {
+    margin-top: 51px;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .banner-info {
+    width: 100%;
+  }
+
+  .banner-info>h1 {
+    font-size: 2.25em;
+  }
+
+  .custom-btn {
+    padding: 14px;
+  }
+
+  .banner-info div button:last-child {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .banner-img {
+    width: 100%;
+  }
+
+  .Free-Workout-Videos {
+    top: 60px;
+    right: 12px;
+  }
+
+  .Video-tutorial {
+    top: 270px;
+    left: 12px;
+  }
+
+  .Video-tutorial img {
+    display: none;
+  }
+
+}
+
+/* Styles for devices between 391px and 750px (tablets) */
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  header {
+    width: 95%;
+  }
+
+  .nav-links {
+    /* gap: 15px; */
+  }
+
+  .nav-links li a {
+    font-size: 1em;
+  }
+
+  /* header banner  */
+  .banner-container {
+    margin-top: 75px;
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  .banner-info {
+    width: 90%;
+  }
+
+  .banner-info div button:last-child {
+    margin-left: 0;
+  }
+
+  .custom-btn {
+    padding: 14px 30px;
+  }
+
+  .Free-Workout-Videos {
+    top: 59px;
+    right: -35px;
+  }
+
+  .Video-tutorial {
+    top: 350px;
+    left: -50px;
+  }
+}

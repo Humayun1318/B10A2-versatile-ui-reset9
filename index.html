@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <!-- icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Versatile UI</title>
+</head>
+
+<body>
+  <header>
+    <!-- navbar -->
+    <nav>
+      <!-- logo -->
+      <a href="index.html" class="logo">
+        <h1>Fitness</h1>
+      </a>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">
+        <i class="fas fa-times"></i>
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+    <!-- header banner -->
+    <section class="banner-container">
+      <div class="banner-info">
+        <h1>Get body in <span id="shape">shape
+          </span> & stay healthy</h1>
+        <p class="para">A huge selection of health and fitness
+          content, healthy recipes and
+          transformation stories to help you get
+          fit and stay
+          fit!</p>
+        <div>
+          <button class="custom-btn">Join Club Now!</button>
+          <button class="custom-btn">Download App</button>
+        </div>
+      </div>
+      <div class="banner-img">
+        <img src="./images/Images 2.png" alt="">
+        <div class="Free-Workout-Videos">
+          <span id="video-number">500+</span>
+          <p>Free Workout Videos</p>
+        </div>
+        <div class="Video-tutorial">
+          <img src="./images/Group 21.png" alt="">
+          <p><span style="color: #FAFAF9; font-size: 1.5em;
+                      font-style: normal;
+                      font-weight: 900;">350+</span>
+            <br> Video tutorial
+          </p>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main>
+    
+  </main>
+
+  <footer></footer>
+  <div class="screen-size" style="margin-top: 100px;">
+    <h1>Screen Size</h1>
+    <p id="viewportSize">Viewport: -- x --</p>
+    <p id="fullScreenSize">Full Screen: -- x --</p>
+  </div>
+  <script>
+    function updateScreenSize() {
+      // Get viewport size (visible part of the window)
+      const viewportWidth = window.innerWidth;
+      const viewportHeight = window.innerHeight;
+
+      // Get full screen size (entire display)
+      const fullScreenWidth = screen.width;
+      const fullScreenHeight = screen.height;
+
+      // Update the UI
+      document.getElementById('viewportSize').textContent = `Viewport: ${viewportWidth}px x ${viewportHeight}px`;
+      document.getElementById('fullScreenSize').textContent = `Full Screen: ${fullScreenWidth}px x ${fullScreenHeight}px`;
+    }
+
+    // Call the function initially
+    updateScreenSize();
+
+    // Update screen size on window resize
+    window.addEventListener('resize', updateScreenSize);
+  </script>
+</body>
+
+</html>
