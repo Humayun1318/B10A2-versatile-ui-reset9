@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 /* Body styling */
@@ -15,7 +15,7 @@ body {
   background: #000;
   max-width: 1440px;
   margin: 0 auto;
-  border: 1px solid red;
+  border: 1px solid white;
 }
 
 /* Ensure images don't overflow their container */
@@ -50,6 +50,7 @@ a {
 
 /*Common Paragraph Styles */
 .para {
+  font-family: 'Inter';
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
@@ -59,7 +60,7 @@ a {
 
 /* common heading */
 .heading {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
   font-size: 3rem;
   font-style: normal;
   font-weight: 900;
@@ -226,10 +227,38 @@ nav {
 
 .Video-tutorial>p {
   color: rgba(239, 237, 232, 0.65);
-
 }
 
-/* Styles for small mobile screens <= 390px */
+/* habits styles */
+.habits-container {
+  width: 74%;
+  margin: 0 auto 100px;
+  text-align: center;
+}
+
+.habits-heading-info>p {
+  margin: 14px auto 58px;
+}
+
+.habits-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.habits-cards h6 {
+  color: #FFF;
+  font-size: 1.125em;
+  font-family: 'Inter';
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.habits-cards img {
+  border-radius: 50%;
+}
+
+/* Styles for small mobile screens <= 576px */
 @media only screen and (max-width: 576px) {
   header {
     width: 90%;
@@ -241,7 +270,7 @@ nav {
 
   .nav-links {
     display: none;
-    
+
   }
 
   /* header banner */
@@ -269,7 +298,7 @@ nav {
   }
 
   .banner-img {
-    width: 100%;
+    /* width: 100%; */
   }
 
   .Free-Workout-Videos {
@@ -282,16 +311,22 @@ nav {
     left: 12px;
   }
 
-  .Video-tutorial img {
-    display: none;
+  /* habits */
+  .habits-container {
+    width: 90%;
   }
+
+  .habits-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
 
 }
 
 /* Styles for devices between 391px and 750px (tablets) */
 @media only screen and (min-width: 577px) and (max-width: 992px) {
   header {
-    width: 95%;
+    width: 90%;
   }
 
   .nav-links {
@@ -329,5 +364,14 @@ nav {
   .Video-tutorial {
     top: 350px;
     left: -50px;
+  }
+
+  /* habits */
+  .habits-container {
+    width: 90%;
+  }
+
+  .habits-cards {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
