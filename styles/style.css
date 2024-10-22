@@ -321,11 +321,102 @@ nav {
   height: 371px;
   background-image: url(..\/images/run.jpg);
   background-repeat: no-repeat;
-  background-position:  66% 28% ;
+  background-position: 66% 28%;
   border-radius: 18px;
 }
 
-.run-img img {
+/* bmi styles */
+.bmi-heading {
+  text-align: center;
+  width: 46%;
+  margin: 0 auto 88px;
+}
+
+.bmi-form-container {
+  background: #222;
+  padding: 50px 0 50px;
+
+
+}
+
+.bmi-chart {
+  width: 74%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bmi-chart table caption {
+  font-size: 1.75em;
+  margin-bottom: 52px;
+  text-align: start;
+}
+
+.bmi-chart table {
+  border-collapse: collapse;
+  width: 37%;
+}
+
+.bmi-chart table thead {
+  text-align: left;
+  color: #FFF;
+  font-size: 1em;
+}
+
+.bmi-chart table th,
+td {
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  padding: 15px 17px 15px 18px;
+}
+
+.bmi-form {
+  width: 54%;
+}
+
+.bmi-form h3 {
+  font-size: 1.75em;
+}
+
+.bmi-form>p {
+  margin: 14px 0 34px;
+}
+
+.bmi-form form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+
+}
+
+.bmi-form form select:last-child {
+  grid-column: 1/-1;
+}
+
+.bmi-form form input,
+select {
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.10);
+  padding: 12px 40px 12px 20px;
+  width: 100%;
+}
+
+.bmi-form form input::placeholder,
+select {
+  color: rgba(255, 255, 255, 0.60);
+  font-family: 'Inter';
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.bmi-form form select option {
+  background-color: #000;
+  font-size: 0.8em;
+  color: white;
+}
+
+.bmi-form button {
+  margin-top: 34px;
 }
 
 /* Styles for small mobile screens <= 576px */
@@ -367,10 +458,6 @@ nav {
     margin-top: 10px;
   }
 
-  .banner-img {
-    /* width: 100%; */
-  }
-
   .Free-Workout-Videos {
     top: 60px;
     right: 12px;
@@ -407,20 +494,54 @@ nav {
   /* run styles */
   .run-container {
     flex-direction: column;
-    flex-wrap: wrap;
     gap: 30px;
+    padding: 31px 33px 35px;
   }
 
   .run-heading-info button {
     width: 100%;
   }
-  .run-img{
+
+  .run-img {
     width: 100%;
     height: 371px;
     background-size: cover;
-    background-position:  50% 50%;
+    background-position: 50% 50%;
   }
 
+  /* bmi styles */
+  .bmi-heading {
+    width: 90%;
+    text-align: start;
+    margin-bottom: 32px;
+  }
+
+  .bmi-heading>h1 {
+    font-size: 2em;
+  }
+
+  .bmi-chart {
+    width: 90%;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .bmi-chart table caption {
+    font-size: 1em;
+    margin-bottom: 23px;
+  }
+
+  .bmi-chart .chart-table {
+    width: 70%;
+  }
+
+  .bmi-form {
+    width: 100%;
+  }
+
+  .bmi-form form {
+    /* width: 100%; */
+  }
 }
 
 /* Styles for devices between 577px and 992px (tablets) */
@@ -484,11 +605,40 @@ nav {
   .run-container {
     width: 90%;
     gap: 50px;
+    padding: 40px 43px 41px 54px;
   }
-  .run-heading-info{
+
+  .run-heading-info {
     flex: 1;
   }
-  .run-img{
+
+  .run-img {
     flex: 1;
   }
+
+  /* bmi styles */
+  .bmi-heading {
+    width: 90%;
+    text-align: start;
+    margin-bottom: 46px;
+  }
+
+  .bmi-chart {
+    width: 90%;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .bmi-chart table {
+    width: 60%;
+  }
+
+  .bmi-chart table caption {
+    margin-bottom: 46px;
+  }
+
+  .bmi-form {
+    width: 100%;
+  }
+
 }
