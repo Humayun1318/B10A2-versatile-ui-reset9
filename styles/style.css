@@ -5,17 +5,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 /* Body styling */
 body {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
   background: #000;
   max-width: 1440px;
   margin: 0 auto;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 /* Ensure images don't overflow their container */
@@ -87,7 +89,7 @@ nav {
   font-weight: 800;
 }
 
-/*nav menu toggle icon styles */
+/*.................nav menu toggle icon styles............ */
 #menu-toggle {
   display: none;
 }
@@ -124,7 +126,7 @@ nav {
   width: 100%;
 }
 
-/* nav menu list */
+/* ...................nav menu list................ */
 .nav-links {
   display: flex;
   gap: 47px;
@@ -145,7 +147,7 @@ nav {
   padding: 8px 20px;
 }
 
-/* ..............header banner  ............*/
+/* ....................header banner  ...................*/
 .banner-container {
   margin-top: 32px;
   display: flex;
@@ -258,47 +260,7 @@ nav {
   border-radius: 50%;
 }
 
-/* meet our team  */
-.team-container {
-  width: 74%;
-  margin: 0 auto 100px;
-  text-align: center;
-}
-
-.team-info>p {
-  margin: 14px auto 58px;
-}
-
-.team-cards {
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.10);
-  padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.team-card {
-  position: relative;
-}
-
-.team-card img {
-  border-radius: 18px;
-  width: 100%;
-  height: 100%;
-}
-
-.team-card h5 {
-  font-size: 1.25em;
-}
-
-.team-member-name {
-  position: absolute;
-  bottom: 16px;
-  left: 19px;
-}
-
-/* run styles */
+/* ......................run styles.................. */
 .run-container {
   width: 74%;
   margin: 0 auto 100px;
@@ -325,7 +287,7 @@ nav {
   border-radius: 18px;
 }
 
-/* bmi styles */
+/*....................... bmi styles .............*/
 .bmi-heading {
   text-align: center;
   width: 46%;
@@ -335,8 +297,6 @@ nav {
 .bmi-form-container {
   background: #222;
   padding: 50px 0 50px;
-
-
 }
 
 .bmi-chart {
@@ -419,6 +379,109 @@ select {
   margin-top: 34px;
 }
 
+/* ...............meet our team...........  */
+.team-container {
+  width: 74%;
+  margin: 88px auto 100px;
+  text-align: center;
+}
+
+.team-info>p {
+  margin: 14px auto 58px;
+}
+
+.team-cards {
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.10);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.team-card {
+  position: relative;
+}
+
+.team-card img {
+  border-radius: 18px;
+  width: 100%;
+  height: 100%;
+}
+
+.team-card h5 {
+  font-size: 1.25em;
+}
+
+.team-member-name {
+  position: absolute;
+  bottom: 16px;
+  left: 19px;
+}
+
+/* .....................footer ..................*/
+.footer {
+  background: rgba(255, 255, 255, 0.10);
+  margin-top: 88px;
+  padding: 66px 0 35px;
+}
+
+.footer-content {
+  width: 74%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+  margin-bottom: 80px;
+}
+
+.footer-content h1 {
+  color: #E6533C;
+  font-family: 'Inter';
+  font-size: 4.375rem;
+  font-style: italic;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-link h3 {
+  color: #FFF;
+  font-family: 'Inter';
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.footer-link ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-link ul li a {
+  font-family: 'Inter';
+  font-size: 1.4375rem;
+  color: rgba(255, 255, 255, 0.50);
+}
+
+.footer hr {
+  width: 74%;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.footer>p {
+  text-align: center;
+  font-size: 1.25em;
+}
+
 /* Styles for small mobile screens <= 576px */
 @media only screen and (max-width: 576px) {
   header {
@@ -434,7 +497,7 @@ select {
 
   }
 
-  /* header banner */
+  /*............ header banner............ */
   .banner-container {
     margin-top: 51px;
     flex-direction: column;
@@ -468,7 +531,7 @@ select {
     left: 12px;
   }
 
-  /* habits */
+  /* .................habits.................. */
   .habits-container {
     width: 90%;
   }
@@ -477,25 +540,12 @@ select {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  /* meet our team  */
-  .team-container {
-    width: 90%;
-  }
-
-  .team-cards {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  /* run styles */
-  .run-container {
-    width: 90%;
-  }
-
-  /* run styles */
+  /* ..................run styles................. */
   .run-container {
     flex-direction: column;
     gap: 30px;
     padding: 31px 33px 35px;
+    width: 90%;
   }
 
   .run-heading-info button {
@@ -509,7 +559,7 @@ select {
     background-position: 50% 50%;
   }
 
-  /* bmi styles */
+  /*............... .....bmi styles................ */
   .bmi-heading {
     width: 90%;
     text-align: start;
@@ -539,9 +589,30 @@ select {
     width: 100%;
   }
 
-  .bmi-form form {
-    /* width: 100%; */
+  .footer-content {
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
   }
+
+  /* ..................meet our team ................. */
+  .team-container {
+    width: 90%;
+  }
+
+  .team-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /*.................... footer....................... */
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer hr {
+    width: 90%;
+  }
+
 }
 
 /* Styles for devices between 577px and 992px (tablets) */
@@ -558,7 +629,7 @@ select {
     font-size: 1em;
   }
 
-  /* header banner  */
+  /*................. header banner..............  */
   .banner-container {
     margin-top: 75px;
     flex-direction: column;
@@ -587,18 +658,13 @@ select {
     left: -50px;
   }
 
-  /* habits */
+  /* ..................habits................ */
   .habits-container {
     width: 90%;
   }
 
   .habits-cards {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  /* meet our team  */
-  .team-container {
-    width: 90%;
   }
 
   /* run styles */
@@ -616,7 +682,7 @@ select {
     flex: 1;
   }
 
-  /* bmi styles */
+  /* ..................bmi styles............ */
   .bmi-heading {
     width: 90%;
     text-align: start;
@@ -639,6 +705,26 @@ select {
 
   .bmi-form {
     width: 100%;
+  }
+
+  /* ...................meet our team..............  */
+  .team-container {
+    width: 90%;
+  }
+
+  /* ....................footer.................. */
+  .footer-content {
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+  }
+
+  .footer-links {
+    justify-content: flex-start;
+    gap: 150px;
+  }
+
+  .footer hr {
+    width: 90%;
   }
 
 }
