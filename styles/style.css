@@ -458,6 +458,13 @@ select {
   width: 100%;
 }
 
+.bmi-form form input, select {
+  outline-style: none;
+  border: 0px;
+  color: white;
+
+}
+
 .bmi-form form input::placeholder,
 select {
   color: rgba(255, 255, 255, 0.60);
